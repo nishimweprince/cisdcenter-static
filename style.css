@@ -3,6 +3,7 @@
     GREEN: #0B9444;
 
 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 
 *{
@@ -13,31 +14,41 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #f5f5f5;
 }
 
 /* <----HERO-NAVBAR----> */
 
 .hero-nav {
     margin: 0;
+    height: 100vh;
     padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 /* NAVBAR */
 
 .navbar {
     background: #fff;
-    padding: 10px 30px;
+    padding: 10px 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 74px;
 
     /* border: 2px solid purple; */
 }
 
 .navbar .logo {
-    width: 150px;
-    height: auto;
+    height: 100%;
+    width: auto;
+    /* border: 2px solid red; */
+}
+
+.navbar .logo:hover {
+    cursor: pointer;
 }
 
 .navbar .logo img {
@@ -69,6 +80,14 @@ body{
     background: #0B9444;
     color: white;
     border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.navbar .nav-links #donate-button:hover {
+    filter: brightness(90%);
+    color: white;
 }
 
 .navbar .nav-links ul li a:hover {
@@ -85,18 +104,21 @@ body{
     color: white;
 
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
     border-radius: 5px;
+}
+
+.navbar .nav-cta a:hover {
+    filter: brightness(90%);
 }
 
 /* HERO-SECTION */
 
 .hero {
-    height: 80vh;
+    height: 100%;
     width: 100%;
-    background-image: url('./images/hero-image.png');
-    background-size: cover;
-    padding: 30px;
-
+    padding: 10px 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,24 +126,117 @@ body{
     color: white;
 }
 
-.hero .hero-heading {
-    border: 2px solid black;
-    padding: 20px 0;
-    display: grid;
-    gap: 15px;
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/hero-image.png');
+    background-size: cover;
+    filter: brightness(30%);
+    z-index: -1;
 }
 
-.hero .hero-heading h1 {
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.hero .hero-content .hero-heading {
+    /* border: 2px solid black; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero .hero-content .hero-heading h1 {
     font-size: 30px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-.hero .hero-heading hr {
+.hero .hero-content .hero-heading hr {
     width: 250px;
+    background-color: #0B9444;
+    height: 2px;
+    border: none;
+}
+
+.hero .hero-content .hero-text {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.hero .hero-text p {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: auto;
+    letter-spacing: 1.3px;
+}
+
+.hero .hero-text p span {
     color: #0B9444;
 }
 
-.hero .hero-text {
-    border: 2px solid red;
+.hero-cta {
+    padding: 10px;
+}
+
+.hero-cta a {
+    padding: 10px 25px;
+    background-color: #1350A0;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 400;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* <------ ABOUT SECTION ------> */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+    padding: 40px 10px 10px 10px;
+}
+
+.about-section h1 {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: #0B9444;
+}
+
+.about-section p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.about-section p span {
+    text-transform: uppercase;
+    color: #0B9444;
+    font-weight: bold;
+}
+
+.about-section a {
+    padding: 10px 15px;
+    background-color: #1350A0;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    filter: brightness(90%);
 }
