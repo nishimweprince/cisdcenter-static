@@ -28,6 +28,43 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.primary-btn {
+    padding: 20px 15px;
+    background-color: #1350A0;
+    color: white;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.primary-btn:hover {
+    background-color: #14417c;
+    transform: scale(1.02);
+}
+
+.secondary-btn {
+    padding: 10px 15px;
+    background: #0B9444;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.secondary-btn:hover {
+    background-color: #107239;
+    color: white;
+}
+
 
 /* NAVBAR */
 
@@ -39,7 +76,6 @@ body {
     align-items: center;
     height: 90px;
     position: relative;
-    padding: 15px;
 
     /* border: 2px solid purple; */
 }
@@ -79,7 +115,6 @@ body {
     max-height: 60px;
 }
 
-
 .navbar .nav-links {
     /* border: 2px solid red; */
     padding: 0 30px;
@@ -93,51 +128,9 @@ body {
     gap: 30px;
 }
 
-.navbar .nav-links ul li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.navbar .nav-links #donate-button {
-    padding: 10px 15px;
-    background: #0B9444;
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
-}
-
-.navbar .nav-links ul li a:hover {
-    color: #1350A0;
-    transform: scale(1.02);
-}
-
-.navbar .nav-links #donate-button:hover {
-    background-color: #107239;
-    color: white;
-}
-
-.navbar .nav-cta {
+.nav-cta {
     /* border: 2px solid red; */
     padding: 0 30px;
-}
-
-.navbar .nav-cta a {
-    padding: 20px 15px;
-    background-color: #1350A0;
-    color: white;
-
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-.navbar .nav-cta a:hover {
-    background-color: #14417c;
 }
 
 /* <----HERO-NAVBAR----> */
@@ -685,12 +678,6 @@ body {
     display: none;
 }
 
-.hamburger .hamburger-icon {
-    display: none;
-
-    color: black;
-}
-
 .hamburger a {
     display: flex;
     flex-direction: column;
@@ -704,9 +691,17 @@ body {
     height: 50px;
 }
 
+.responsive-nav {
+    display: none;
+}
+
 /* <----- MEDIA QUERIES ------->  */
 
 @media screen and (max-width: 420px) {
+
+    .hero-nav {
+        position: relative;
+    }
 
     .navbar {
         padding: 15px 20px;
@@ -745,10 +740,74 @@ body {
         align-items: center;
     }
 
-    .hamburger .icon-open {
+    .hamburger-icon {
         display: flex;
         justify-content: center;
         align-items: center;
+        /* border: 2px solid red; */
+    }
+
+    .hamburger .is-not-active {
+        display: none;
+    }
+
+    .is-not-active {
+        display: none;
+    }
+
+    /* <---- RESPONSIVE NAV ----> */
+
+    .responsive-nav {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .responsive-nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 50px 0;
+        top: 0;
+        left: 10px;
+        right: 10px;
+
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .responsive-nav-links .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .responsive-nav .nav-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .responsive-nav-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .is-active {
+        display: block;
     }
 
     /* HERO-NAVIGATION  */

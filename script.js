@@ -37,3 +37,15 @@ let sendMessage = (e) => {
 }
 
 submit_button.addEventListener("click", sendMessage);
+
+// <--- RESPONSIVE NAVBAR --->
+
+let hamburger = document.querySelector(".hamburger");
+let hamburger_menu = document.querySelector(".hamburger-icon");
+
+hamburger_menu.addEventListener("click", () => {
+    hamburger_menu[0].classList.add("is-not-active");
+    hamburger_menu[1].classList.remove("is-active");
+    console.log(hamburger_menu);
+
+});
