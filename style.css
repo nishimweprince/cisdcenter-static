@@ -684,11 +684,12 @@ ul li a {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #58287F;
+    color: black;;
 }
 
 .hamburger a svg {
     height: 50px;
+    transition: 0.4s;
 }
 
 .responsive-nav {
@@ -744,15 +745,16 @@ ul li a {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* border: 2px solid red; */
     }
 
     .hamburger .is-not-active {
         display: none;
+        transition: 0.4s;
     }
 
-    .is-not-active {
+    .hero-nav .hide-nav {
         display: none;
+        transition: all 0.4s ease-in-out;
     }
 
     /* <---- RESPONSIVE NAV ----> */
@@ -780,6 +782,7 @@ ul li a {
 
         background-color: white;
         border-radius: 5px;
+        transition: all 0.4s ease-in-out;
     }
 
     .responsive-nav-links .nav-links {
