@@ -540,6 +540,172 @@ ul li a {
 
 /* <----- MEDIA QUERIES ------->  */
 
+/* TABLET */
+
+@media screen and (max-width: 768px){
+
+    .navbar {
+        padding: 15px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .logo-container {
+        /* border: 2px solid red; */
+    }
+
+    .logo img {
+        /* border: 2px solid black; */
+        height: 20px;
+        width: 150px;
+    }
+
+    #ur-logo img {
+        height: 50px;
+    }
+
+    #ur-logo p {
+        font-size: 6px;
+        text-align: center;
+    }
+
+    .navbar .nav-links, .navbar .nav-cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger .is-not-active {
+        display: none;
+        transition: 0.4s;
+    }
+
+    .hero-nav .hide-nav {
+        display: none;
+        transition: all 0.4s ease-in-out;
+    }
+
+    /* <---- RESPONSIVE NAV ----> */
+
+    .responsive-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .responsive-nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 50px 0;
+        left: 10px;
+        right: 10px;
+
+        background-color: white;
+        border-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .responsive-nav .nav-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .responsive-nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .is-active {
+        display: block;
+    }
+
+    /* HERO-NAVIGATION  */
+
+    .hero-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 80vh;
+    }
+
+    /* ABOUT SECTION  */
+
+    .about-mission h1, .about-vision h1, .about-core-values h1, .about-strategy h1 {
+        font-size: 25px;
+    }
+
+    .about-mission p, .about-vision p, .about-core-values p, .about-strategy p {
+        font-size: 16px;
+    }
+
+    .core-values-container {
+        padding: 20px 70px;
+    }
+
+    .core-value-box h1 {
+        font-size: 20px;
+    }
+
+    .core-value-box p {
+        font-size: 16px;
+    }
+
+    /* <----- FOOTER -----> */
+
+    .footer {
+        padding: 20px 40px;
+    }
+
+    /* FOOTER LINKS  */
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .footer-quick-links {
+        display: flex;
+        gap: 30px;
+    }
+
+}
+
+
+/* MOBILE  */
+
 @media screen and (max-width: 420px) {
 
     .navbar {

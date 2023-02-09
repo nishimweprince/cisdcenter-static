@@ -273,6 +273,7 @@ ul li a {
     letter-spacing: 1.2px;
     font-weight: 600;
     color: #0B9444;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -410,7 +411,7 @@ ul li a {
     font-weight: 600;
 }
 
-.partners .partners-logos {
+.partners-logos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,7 +422,7 @@ ul li a {
     /* border: 2px solid red; */
 }
 
-.partners .partners-logos ul {
+.partners-logos ul {
     margin: 20px 0;
     padding: 10px 50px;
     display: flex;
@@ -690,13 +691,195 @@ ul li a {
     display: none;
 }
 
-/* <----- MEDIA QUERIES ------->  */
+/* <----- MEDIA QUERIES------->  */
+
+/* TABLET */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .logo-container {
+        /* border: 2px solid red; */
+    }
+
+    .logo img {
+        /* border: 2px solid black; */
+        height: 20px;
+        width: 150px;
+    }
+
+    #ur-logo img {
+        height: 50px;
+    }
+
+    #ur-logo p {
+        font-size: 6px;
+        text-align: center;
+    }
+
+    .navbar .nav-links, .navbar .nav-cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger .is-not-active {
+        display: none;
+        transition: 0.4s;
+    }
+
+    .hero-nav .hide-nav {
+        display: none;
+        transition: all 0.4s ease-in-out;
+    }
+
+    /* <---- RESPONSIVE NAV ----> */
+
+    .responsive-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .responsive-nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 50px 0;
+        left: 10px;
+        right: 10px;
+
+        background-color: white;
+        border-radius: 5px;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .responsive-nav .nav-cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .responsive-nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .is-active {
+        display: block;
+    }
+
+        /* HERO-NAVIGATION  */
+
+        .hero-nav {
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+        }
+    
+        /* <---- HERO SECTION ----> */
+    
+        .hero {
+            padding: 20px 70px;
+            height: 80vh;
+            gap: 30px;
+            justify-content: center;
+        }
+    
+        .hero::before {
+            position: absolute;
+            height: 80vh;
+            top: 0;
+        }
+
+    /* <--- ABOUT SECTION ---> */
+
+    .about-section {
+        padding: 20px 40px;
+    }
+
+    .areas-of-work {
+        padding: 20px 40px;
+    }
+
+    .thematic-areas {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thematic-engagement {
+        padding: 10px;
+    }
+
+    /* <-- PARTNERS --> */
+
+    .partners-logos ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 10px 40px;
+    }
+
+    /* <----- FOOTER -----> */
+
+    .footer {
+        padding: 20px 40px;
+    }
+
+    /* FOOTER LINKS  */
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .footer-quick-links {
+        display: flex;
+        gap: 30px;
+    }
+
+}
+
+/* MOBILE  */
 
 @media screen and (max-width: 420px) {
-
-    .hero-nav {
-        position: relative;
-    }
 
     .navbar {
         padding: 15px 20px;
@@ -756,6 +939,7 @@ ul li a {
     .responsive-nav {
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: white;
         position: relative;
         left: 0;
@@ -771,8 +955,6 @@ ul li a {
         gap: 10px;
         padding: 50px 0;
         top: 0;
-        left: 10px;
-        right: 10px;
 
         background-color: white;
         border-radius: 5px;
@@ -809,7 +991,7 @@ ul li a {
     .hero-nav {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
     }
 
     /* <---- HERO SECTION ----> */
@@ -817,13 +999,15 @@ ul li a {
     .hero {
         align-items: center;
         padding: 20px;
-        height: 85vh;
+        height: 80vh;
         gap: 30px;
         justify-content: center;
     }
 
     .hero::before {
-        height: 100%;
+        position: absolute;
+        height: 80vh;
+        top: 0;
     }
 
     .hero .hero-text {
