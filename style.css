@@ -659,11 +659,6 @@ ul li a {
 
 }
 
-.nav-links-container {
-    display: flex;
-    justify-content: space-between;
-    width: 67%;
-}
 
 /* <------ RESPONSIVENESS ------> */
 
@@ -730,7 +725,7 @@ ul li a {
         text-align: center;
     }
 
-    .nav-links-container {
+    .navbar .nav-links, .navbar .nav-cta {
         display: none;
     }
 
@@ -773,7 +768,7 @@ ul li a {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        gap: 40px;
+        gap: 10px;
         padding: 50px 0;
         top: 0;
         left: 10px;
@@ -784,23 +779,20 @@ ul li a {
         transition: all 0.4s ease-in-out;
     }
 
-    .responsive-nav-links .nav-links {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
     .responsive-nav .nav-cta {
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
         font-size: 16px;
+        padding: 20px;
     }
 
     .responsive-nav-links ul {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding: 10px;
         gap: 20px;
     }
 
@@ -817,6 +809,7 @@ ul li a {
     .hero-nav {
         display: flex;
         flex-direction: column;
+        height: 100vh;
     }
 
     /* <---- HERO SECTION ----> */
