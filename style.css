@@ -633,7 +633,7 @@ ul li a {
 .footer-location .location-heading ul li {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 8px
 }
 
 .footer-location .location-map {
