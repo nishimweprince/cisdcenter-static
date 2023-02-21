@@ -992,7 +992,7 @@ ul li a {
     .hero-nav {
         display: flex;
         flex-direction: column;
-        height: 80vh;
+        height: auto;
     }
 
     /* <---- HERO SECTION ----> */
@@ -1000,14 +1000,14 @@ ul li a {
     .hero {
         align-items: center;
         padding: 20px;
-        height: 80vh;
+        height: 100%;
         gap: 30px;
         justify-content: center;
     }
 
     .hero::before {
         position: absolute;
-        height: 80vh;
+        height: 100%;
         top: 0;
     }
 
