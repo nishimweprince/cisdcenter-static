@@ -1,0 +1,235 @@
+/* COLOR PALETTE: 
+    BLUE: #1350A0;
+    GREEN: #0B9444;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Poppins&display=swap');
+
+
+/* <------ UNIVERSAL -------> */
+
+:root {
+    --purple: #1350A0;
+    --green: #0B9444;
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'DM Serif Text', serif;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li a:hover {
+    color: var(--purple);
+    transform: scale(1.02);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.primary-btn {
+    padding: 15px 15px;
+    background-color: var(--purple);
+    color: white;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.primary-btn:hover {
+    background-color: #14417c;
+    transform: scale(1.02);
+}
+
+.secondary-btn {
+    padding: 10px 15px;
+    background: #0B9444;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.secondary-btn:hover {
+    background-color: #107239;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background: #fff;
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    /* border: 2px solid purple; */
+}
+
+.navbar .logo-container {
+    /* border: 2px solid red; */
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#cisd-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#ur-logo {
+    font-size: 8px;
+    font-weight: 500;
+    color: var(--purple);
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'DM Serif Text', serif;
+}
+
+.navbar .logo-container a img {
+    height: auto;
+    max-width: 160px;
+}
+
+.navbar .logo-container #ur-logo img {
+    max-height: 60px;
+}
+
+.navbar .nav-links {
+    /* border: 2px solid red; */
+    padding: 0 30px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-cta {
+    /* border: 2px solid red; */
+    padding: 0 30px;
+}
+
+/* <----HERO-NAVBAR----> */
+
+.hero-nav {
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+/* <--- HERO SECTION ---> */
+
+.hero {
+    display: grid;
+    grid-template-columns: 45% 55%;
+
+    padding: 0 10px 10px;
+    /* border: 2px solid red; */
+}
+
+.hero-text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 0 0 50px;
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hero-heading h1 {
+    font-size: 35px;
+    font-weight: 550;
+}
+
+.hero-heading h1 span {
+    color: var(--green);
+}
+
+.hero-heading p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-cta a {
+    padding: 15px 15px;
+}
+
+.hero-image {
+    background-image: url(./images/images/image-7.jpg);
+    background-size: cover;
+    border-radius: 5px;
+
+    /* border: 2px solid red; */
+}
+
+
+/* <------ RESPONSIVENESS ------> */
+
+.responsive {
+    display: none;
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+    display: none;
+}
+
+.hamburger a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;;
+}
+
+.hamburger a svg {
+    height: 50px;
+    transition: 0.4s;
+}
+
+.responsive-nav {
+    display: none;
+}
