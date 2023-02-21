@@ -755,7 +755,7 @@ ul li a {
     .hero-nav {
         display: grid;
         grid-template-rows: 15% 85%;
-        height: 100vh;
+        height: 150vh;
     }
 
     .navbar {
