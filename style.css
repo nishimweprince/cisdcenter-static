@@ -25,6 +25,7 @@ li a:hover {
 }
 
 body {
+    overflow-y: visible;
     font-family: 'Poppins', sans-serif;
 }
 
