@@ -798,9 +798,25 @@ ul li a {
     }
 }
 
+/* 500 PX */
+
+@media screen and (max-width: 500px) {
+
+    .input-container {
+        width: 100%;
+    }
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 420px) {
+
+    /* DONATE SECTION  */
+
+    .donate-form-container {
+        width: 80%;
+    }
+
     /* <----- FOOTER -----> */
 
     .footer {
